@@ -12,3 +12,33 @@
     border-radius: 20px;
     color: white;
 }
+
+/* Home */
+#home .back-div{
+    background-color: #e8eced;
+    padding: 50px;
+    color: black;
+    border-radius: 30px;
+}
+
+#home p{
+    font-size: 25px;
+}
+
+.button-green{
+    background-color: #cbf58f;
+    color: black;
+    padding-inline: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+
+.button-light{
+    background-color: #cbf58f;
+    color: black;
+    padding-inline: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
