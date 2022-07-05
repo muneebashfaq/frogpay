@@ -5,40 +5,87 @@
 }
 
 .btn-nav{
-    background-color: #333333;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-inline: 40px;
-    border-radius: 20px;
+    width: 129px;
+    height: 64px;
+    left: 1126px;
+    top: 14px;
     color: white;
+    background: #333333;
+    border-radius: 12px;
 }
 
 /* Home */
-#home .back-div{
-    background-color: #e8eced;
-    padding: 50px;
-    color: black;
-    border-radius: 30px;
+.back-div{
+    /* width: 1344px;
+    height: 480px; */
+    left: 48px;
+    top: 185px;
+    
+    background: #E8ECED;
+    border-radius: 32px;
 }
 
 #home p{
-    font-size: 25px;
+    width: 800px;
+    height: 168px;
+    left: 36px;
+    top: 63px;
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 56px;
 }
 
+.text-pix{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+
 .button-green{
-    background-color: #cbf58f;
-    color: black;
-    padding-inline: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 25px;
+    box-sizing: border-box;
+    width: 219px;
+    height: 64px;
+    left: 36px;
+    top: 380px;
+    border: none;
+    background: #A6FE21;
+    border-radius: 24px;
 }
 
 .button-light{
-    background-color: #cbf58f;
-    color: black;
-    padding-inline: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 6px 12px;
+    gap: 10px;
+
+    width: 300px;
+    height: 40px;
+    left: 28px;
+    top: 40.76px;
+    
+    background: rgba(166, 254, 33, 0.46);
+    backdrop-filter: blur(12px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 12px;
+    transform: rotate(-1.22deg);
+}
+
+.send{
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100px;
+    color: rgba(222, 226, 227, 0.4);
+
+}
+
+
+.send-distance{
+    margin-top: 200px;
+    margin-bottom: 200px;
 }

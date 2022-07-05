@@ -1,41 +1,16 @@
-import Meta from '../components/Meta';
-import Header from '../components/Header';
-import { Container, Row, Col } from "react-bootstrap";
+import React from 'react';
+import Homepage from '../components/Homepage';
+import SendCrypto from '../components/SendCrypto';
+import KnowMore from '../components/KnowMore';
 
-const Home = () => {
-  // page content
-  const pageTitle = 'PayFrog';
-  const pageDescription = 'World-first decentralized charge-back option in the blockchain history';
+function Home() {
   return (
     <>
-      <section id="home">
-        <Container className='back-div'>
-          <Row>
-            <div className='col-md-6'>
-              <a className='button-light text-decoration-none'>Thanks to PayFrog</a>
-              <Meta title={pageTitle}/>
-              <Header head={pageTitle} description={pageDescription} />
-            </div>
-            <div className='col-md-6'>
-              <img className="img-fluid" src="./frog/froghomepage.png"></img>
-            </div>
-          </Row>
-          <Row>
-            <div className='container'>
-              <Row>
-                <div classNAme="col-md-12">
-                  <a className='button-green text-decoration-none'>1</a>
-                </div>
-                <div classNAme="col-md-12">
-                  <a className='button-green text-decoration-none'>2</a>
-                </div>
-              </Row>
-            </div>
-          </Row>        
-        </Container>
-      </section>
+      <Homepage />
+      <SendCrypto />
+      <KnowMore />
     </>
   )
 }
 
-export default Home;
+export default Home
