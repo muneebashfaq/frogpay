@@ -1,0 +1,14 @@
+/* Menu */
+
+.text-green{
+    color: #a6fe20;
+}
+
+.btn-nav{
+    background-color: #333333;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-inline: 40px;
+    border-radius: 20px;
+    color: white;
+}
