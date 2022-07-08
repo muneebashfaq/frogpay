@@ -63,6 +63,13 @@
     padding-block: 30px;
 }
 
+.divider3{
+    padding-block: 10px;
+}
+.jdm-margin{
+    margin-top: 100px;
+}
+
 .btn-greenlight{
     display: inline-block;
     /* flex-direction: row; */
@@ -216,6 +223,10 @@ footer a.style3{
     font-size: 78px;
 }
 
+#jdm h1{
+    font-size: 78px;
+}
+
 
 .frogatob{
     color: #FFFFFF;
@@ -244,4 +255,11 @@ footer a.style3{
 #frogatob .marginfrog{
 
     padding-block: 200px;
+}
+
+#jdm .jdm-img{
+    background-image: url("../assets/img/jdm.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 655px;
 }
