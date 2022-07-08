@@ -5,6 +5,7 @@ import SendProtected from "../components/SendProtected";
 import KnowUs from "../components/KnowUs";
 import Decentralized from "../components/Decentralized";
 import FrogAToB from "../components/FrogAToB";
+import Jdm from "../components/Jdm";
 
 const Home = () => {
   // page content
@@ -17,6 +18,7 @@ const Home = () => {
     <Divider />
     <Decentralized />
     <FrogAToB />
+    <Jdm />
     </>
   )
 }

@@ -3,7 +3,7 @@ import Divider from "../components/Divider";
 import { Container, Row, Col } from "react-bootstrap";
 
 
-function Decentralized() {
+function frogatob() {
   return (
     <section className="boxe" id="frogatob">
         <Divider />
@@ -29,4 +29,4 @@ function Decentralized() {
   )
 }
 
-export default Decentralized
+export default frogatob
