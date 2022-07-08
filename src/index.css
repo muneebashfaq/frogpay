@@ -1,13 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
+@font-face {
+  font-family: "Cygnito Mono";
+  src: url("../src/assets/fonts/CygnitoMono.otf")
+}
+
+
+@font-face {
+  font-family: "Neue Pixel Sans Font";
+  src: url("../src/assets/fonts/NeuePixelSans.ttf")
+}
+
+@font-face {
+  font-family: "PP Fraktion Mono";
+  src: url("../src/assets/fonts/PPFraktionMono-Regular.otf")
+}
+
+.font-cyg{
+  font-family: "Cygnito Mono";
+}
+
+.font-neue{
+  font-family: "Neue Pixel Sans Font";
+}
+
+.font-frak{
+  font-family: "PP Fraktion Mono";
+}
+
 
 
 body {
-  font-family: 'Press Start 2P';
+  font-family: 'Cygnito Mono';
   color: white;
   background-color: black;
 }
 
 main {
   min-height: 80vh;
+}
+
+.boxe{
+  background: #121212;
+  border-radius: 32px;
+  border-color: #4b4b4a;
+  border-style: solid;
+  border-width: 1px;
+  padding: 30px;
 }

@@ -1,16 +1,24 @@
 import React from 'react';
-import Homepage from '../components/Homepage';
-import SendCrypto from '../components/SendCrypto';
-import KnowMore from '../components/KnowMore';
+import Divider from "../components/Divider";
+import Homepage from "../components/Homepage";
+import SendProtected from "../components/SendProtected";
+import KnowUs from "../components/KnowUs";
+import Decentralized from "../components/Decentralized";
+import FrogAToB from "../components/FrogAToB";
 
-function Home() {
+const Home = () => {
+  // page content
+  const pageTitle = 'FrogPay';
   return (
     <>
-      <Homepage />
-      <SendCrypto />
-      <KnowMore />
+    <Homepage />
+    <SendProtected />
+    <KnowUs />
+    <Divider />
+    <Decentralized />
+    <FrogAToB />
     </>
   )
 }
 
-export default Home
+export default Home;

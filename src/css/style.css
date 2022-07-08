@@ -5,87 +5,243 @@
 }
 
 .btn-nav{
-    width: 129px;
-    height: 64px;
-    left: 1126px;
-    top: 14px;
-    color: white;
-    background: #333333;
+    background-color: #333333;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-inline: 40px;
     border-radius: 12px;
+    color: white;
+    font-size: 20px;
 }
 
-/* Home */
-.back-div{
-    /* width: 1344px;
-    height: 480px; */
-    left: 48px;
-    top: 185px;
-    
+.font-nav{
+    font-size: 40px;
+}
+
+.btn-green{
+    background: #A6FE21;
+    border-radius: 24px;
+    padding-inline: 40px;
+    padding-block: 20px;
+    border: none;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.white-back{
     background: #E8ECED;
     border-radius: 32px;
+    padding: 35px;
+    color: black;
+}
+
+.container{
+    max-width: 1350px;
+}
+
+.img-frog{
+    background: url("../assets/img/froghome.png");
+    background-repeat: no-repeat;
 }
 
 #home p{
-    width: 800px;
-    height: 168px;
-    left: 36px;
-    top: 63px;
-    color: black;
     font-style: normal;
     font-weight: 500;
-    font-size: 35px;
-    line-height: 56px;
+    font-size: 48px;
+    line-height: 50px;
+    letter-spacing: -0.08em;
+    color: #333333;
+
 }
 
-.text-pix{
-    padding-top: 20px;
-    padding-left: 50px;
+.divider1{
+    padding-block: 80px;
+}
+.divider2{
+    padding-block: 30px;
 }
 
-
-.button-green{
-    box-sizing: border-box;
-    width: 219px;
-    height: 64px;
-    left: 36px;
-    top: 380px;
-    border: none;
-    background: #A6FE21;
-    border-radius: 24px;
-}
-
-.button-light{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+.btn-greenlight{
+    display: inline-block;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
     padding: 6px 12px;
-    gap: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
 
-    width: 300px;
-    height: 40px;
-    left: 28px;
-    top: 40.76px;
-    
     background: rgba(166, 254, 33, 0.46);
     backdrop-filter: blur(12px);
-    /* Note: backdrop-filter has minimal browser support */
-    
     border-radius: 12px;
     transform: rotate(-1.22deg);
 }
 
-.send{
+.btn-greenmore{
+    display: inline-block;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    padding: 6px 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
 
+    background: #baf960;
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    transform: rotate(-1.22deg);
+}
+
+#SendProtected {
+    font-size: 90px;
+    color: #595a5c;
+}
+
+#SendProtected span{
+    color: white;
+}
+
+#knowus p.main{  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.08em;
+    color: #333333;
+}
+
+.divider-border{
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+}
+
+#knowus a li.less{
+    font-family: 'PP Fraktion Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
-    line-height: 100px;
-    color: rgba(222, 226, 227, 0.4);
+    font-size: 15px;
+    line-height: 20px;
+}
 
+.img-center{
+    display: table-cell;
+    /* height: 300px; */
+    text-align: center;
+    /* width: 300px; */
+    vertical-align: middle;
+    
+}
+
+footer .footer1{
+    background: #E8ECED;
+    border-radius: 24px;
+    color: black;
+    padding-block: 7px;
+    padding-right: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+}
+
+footer .footer2{
+    padding-block: 7px;
+    padding-right: 0px;
+    margin-top: 20px;
+}
+
+footer .footend{
+    display: flex;
+    justify-content: end;
+    /* max-height: 76px; */
+}
+
+footer .footcenter{
+    display: flex;
+    justify-content: center;
+    /* max-height: 76px; */
+}
+
+footer a.style1{
+    background-color: black;
+    padding-block: 25px;
+    padding-inline: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+footer p.style1{
+    background-color: black;
+    font-size: 20px;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+footer i.subfoot {
+    font-size: 25px;
+}
+
+footer a.style2{
+    padding: 25px;
+    font-size: 20px;
+    line-height: 28px;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: black
+}
+
+footer a.style3{
+    font-size: 30px;
+    line-height: 25px;
+    padding: 25px;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
 }
 
 
-.send-distance{
-    margin-top: 200px;
-    margin-bottom: 200px;
+/* footer non allineato correttamente al button e agli altri a */
+
+.dec-gray{
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+
+#decentralized h1{
+    font-size: 78px;
+}
+
+
+.frogatob{
+    color: #FFFFFF;
+    opacity: 0.5;
+    text-decoration: underline;     
+}
+
+#frogatob button{
+    display: flex;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    background-color: transparent;
+    color: white;
+    padding-inline: 30px;
+    padding-block: 6px;
+}
+
+#frogatob i{
+
+    display: flex;
+    padding-inline: 7px;
+    padding-block: 5px;
+}
+
+#frogatob .marginfrog{
+
+    padding-block: 200px;
 }

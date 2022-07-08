@@ -1,34 +1,31 @@
 import Meta from '../components/Meta';
-import Header from '../components/Header';
 import { Container, Row, Col } from "react-bootstrap";
+import Divider from "../components/Divider";
 
 const Home = () => {
   // page content
-  const pageTitle = 'PayFrog';
-  const pageDescription = 'World-first decentralized charge-back option in the blockchain history';
+  const pageTitle = 'FrogPay';
   return (
     <>
-      <section id="home">
-        <Container className='back-div'>
-          <Row>
-            <div className='col-md-6 text-pix'>
-              <a className='button-light text-decoration-none'>Thanks to PayFrog</a>
-              <Meta title={pageTitle}/>
-              <Header head={pageTitle} description={pageDescription} />
-            </div>
-            <div className='col-md-6'>
-              <img className="img-fluid" src="./frog/froghomepage.png"></img>
-            </div>
-          </Row>
-          <Row className="p-5">
-              <div className='col-md-3'>
-                <button className='button-green text-decoration-none'>Litepaper-></button>
-              </div>
-              <div className='col-md-3'>
-                <button className='button-green text-decoration-none'>Whitepaper-></button>
-              </div>
-            </Row>        
-        </Container>
+    <section id="home">
+      <Meta title={pageTitle}/>
+      <Container className="white-back">
+        <Row>
+          <div className="col-md-7">
+            <a className="btn-greenlight font-frak">Thanks to PayFrog</a>
+            <p>World-first decentralized<br></br>charge-back option<br></br>in the blockchain history</p>
+            <Divider />
+            <button type="button" className="me-2 btn-green">
+                Litepaper <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button type="button" className="me-2 btn-green">
+              Whitepaper <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div className="col-md-5 img-frog">
+          </div>
+        </Row>
+      </Container>
       </section>
     </>
   )
