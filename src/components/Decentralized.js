@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 function Decentralized() {
   return (
-    <section className="boxe" id="decentralized">
+    <section className="boxe card-boxe" id="decentralized">
         <Divider />
         <Container>
             <Row>
