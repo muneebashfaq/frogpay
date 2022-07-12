@@ -77,12 +77,6 @@
     color: black;
 }
 
-#home img.froggin{
-    display: none;
-    position: absolute;
-    top: 105px;
-}
-
 #home img.froggin2{
     display: flex;
     position: absolute;
@@ -366,3 +360,18 @@ footer a.style3{
     from, to { border-color: transparent }
     50% { border-color: white; }
   }
+
+
+/* SMARTPHONE PART */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+
+    #home img.froggin2{
+        display: none;
+        position: absolute;
+        top: 130px;
+    }
+}

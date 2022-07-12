@@ -13,8 +13,8 @@ function SendProtected() {
         <section id="SendProtected">
             <Container>
                 <Row>
-                    <div className="typewriter text-center font-neue">
-                        <p>Send 
+                    <Col className="typewriter text-center font-neue">
+                    <p>Send 
                         <Typewriter
                             words={[' Protected', ' Protected', ' Frog', ' Protected']}
                             loop={5}
@@ -26,7 +26,7 @@ function SendProtected() {
                             />
                             <br></br>
                             crypto payments to strangers</p>
-                    </div>
+                    </Col>
                 </Row>
             </Container>
         </section>

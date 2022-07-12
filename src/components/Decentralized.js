@@ -12,28 +12,28 @@ function Decentralized() {
         <Divider />
         <Container>
             <Row>
-                <div className="col-md-12"><p className="dec-gray font-frak">Frog's Featerues</p></div>
+                <Col md="12"><p className="dec-gray font-frak">Frog's Featerues</p></Col>
             </Row>
             <Row>
-                <div className="col-md-6"><h1>Decentralized and Protected Payments</h1></div>
-                <div className="col-md-6">
+                <Col md="6"><h1>Decentralized and Protected Payments</h1></Col>
+                <Col md="6">
                   <img className="img-fluid dec" src={frogsword}></img>
                   <Divider />
                   <Divider />
                   <Divider />
-                  </div>
+                </Col>
             </Row>
             <Row>
-              <div className="col-md-12">
+              <Col md="12">
                 <img className="img-fluid" src={line}></img>
-              </div>
-              <div className="col-md-12">
+              </Col>
+              <Col md="12">
                 <p className="font-frak">Security & Decentralization toghether for the first time</p>
-              </div>
+              </Col>
             </Row>
 
             <Row>
-                <div className="col-md-12"><p className="dec-gray font-frak">Frog's Featerues</p></div>
+                <Col md="12"><p className="dec-gray font-frak">Frog's Featerues</p></Col>
             </Row>
 
             

@@ -10,8 +10,8 @@ function KnowUs() {
     <section className="white-back2" id="knowus">
         <Container>
             <Row className="border-know">
-                <div className="col-md-4">
-                    <a className="btn-greenmore font-frak">Know more about PayFrog</a>
+                <Col md="4">
+                <a className="btn-greenmore font-frak">Know more about PayFrog</a>
                     <p className="main mt-4">Know FrogPay<br></br> in 3 min</p>
                     <Divider />
                     <Divider />
@@ -23,10 +23,10 @@ function KnowUs() {
                         <li className="less">Anonimous votes</li>
                         <li className="less">Earn rewards by Judge individual transaction</li>
                     </ol>
-                </div>
-                <div className="col-md-8 text-center img-center">
+                </Col>
+                <Col md="8" className="text-center img-center">
                     <img src={frogpay3min} className="img-fluid "></img>
-                </div>
+                </Col>
             </Row>
         </Container>
     </section>

@@ -20,15 +20,14 @@ const Menu = () => {
               </button>
               </Link>
             </li>
-          </ul>
-
-          <div className="col-md-3 text-end">
-            <Link to="/">
-              <button type="button" className="btn-nav">
-                Docs
+            <li>
+              <Link to="/about">
+              <button type="button" className="me-2 btn-nav">
+              Docs
               </button>
-            </Link>
-          </div>
+              </Link>
+            </li>
+          </ul>
         </Nav>
       </header>
     </Container>

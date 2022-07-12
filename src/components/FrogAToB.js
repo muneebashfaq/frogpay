@@ -10,20 +10,20 @@ function frogatob() {
         <Divider />
         <Container>
             <Row className="text-center">
-                <div className="col-md-12">
+                <Col md="12">
                     <h4>Frog A send a protected payment<br></br> to Frog B throught FrogPay dAPP</h4>
                     <p className="frogatob">See full scheme</p>
-                </div>
+                </Col>
             </Row>
             <Row className="text-center">
-                <div className="col-md-12 marginfrog">
+                <Col className="col-md-12 marginfrog">
                     <img className="img-fluid" src={frogatobimg}></img>
-                </div>
+                </Col>
             </Row>
             <Row className="text-center">
-                <div className="col-md-12">
+                <Col md="12">
                     <button type="button" className="me-2">then <i class="fa-solid fa-arrow-right"></i></button>
-                </div>
+                </Col>
             </Row>
         </Container>
     </section>
