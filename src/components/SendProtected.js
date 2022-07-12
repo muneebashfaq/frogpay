@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import Typewriter from "typewriter-effect";
+import { Typewriter, useTypewriter, Cursor } from 'react-simple-typewriter'
 import Divider from "../components/Divider";
 
 
-function SendProtected() {
+
+
+function SendProtected() {    
   return (
     <>
     <Divider />
@@ -12,11 +14,18 @@ function SendProtected() {
             <Container>
                 <Row>
                     <div className="typewriter text-center font-neue">
-                        <p>Send
-                            <span> dawad
-                            </span>
-                        </p>
-                        <p>crypto payments to strangers</p>
+                        <p>Send 
+                        <Typewriter
+                            words={[' Protected', ' Protected', ' Frog', ' Protected']}
+                            loop={5}
+                            cursor
+                            cursorStyle='|'
+                            typeSpeed={170}
+                            deleteSpeed={80}
+                            delaySpeed={1000}
+                            />
+                            <br></br>
+                            crypto payments to strangers</p>
                     </div>
                 </Row>
             </Container>

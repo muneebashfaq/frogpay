@@ -12,19 +12,23 @@ const Home = () => {
       <Meta title={pageTitle}/>
       <Container className="white-back">
         <Row>
-          <div className="col-md-7">
+          <div className="col-md-7 col-xs-12">
             <a className="btn-greenlight font-frak">Thanks to PayFrog</a>
             <p className="mt-4">World-first decentralized<br></br>charge-back option<br></br>in the blockchain history</p>
             <Divider />
-            <button type="button" className="me-2 btn-green">
-                Litepaper <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <button type="button" className="me-2 btn-green">
-              Whitepaper <i class="fa-solid fa-arrow-right"></i>
-            </button>
           </div>
           <div className="col-md-5">
-            <img src={FrogHomeImg} className="img-fluid"></img>
+            <img src={FrogHomeImg} className="img-fluid froggin2"></img>
+          </div>
+        </Row>
+        <Row>
+          <div className="col-md-12 mb-5">
+              <button type="button" className="me-2 btn-green">
+                  Litepaper <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button type="button" className="me-2 btn-green">
+                Whitepaper <i class="fa-solid fa-arrow-right"></i>
+              </button>
           </div>
         </Row>
       </Container>

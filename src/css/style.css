@@ -60,7 +60,7 @@
 }
 
 .container{
-    max-width: 1370px;
+    max-width: 1380px;
 }
 
 .img-frog{
@@ -70,17 +70,23 @@
 
 #home p{
     font-style: normal;
-    font-weight: 550;
+    font-weight: bolder;
     font-size: 44px;
-    line-height: 50px;
-    letter-spacing: -0.08em;
-    color: #333333;
+    line-height: 60px;
+    letter-spacing: -0.05em;
+    color: black;
 }
 
-#home img{
+#home img.froggin{
+    display: none;
+    position: absolute;
+    top: 105px;
+}
+
+#home img.froggin2{
     display: flex;
-    /* position:absolute ; */
-    /* padding: px; */
+    position: absolute;
+    top: 130px;
 }
 
 .divider1{
@@ -340,4 +346,23 @@ footer a.style3{
     border-width: 1px;
   }
 
-  
+  .typewriter span p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation:
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+   
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }

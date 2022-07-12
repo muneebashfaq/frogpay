@@ -26,7 +26,7 @@ const Home = () => {
       <Divider />
 
     <Decentralized />
-    <Test />
+    {/* <Test /> */}
     <FrogAToB />
     <Jdm />
     <Webelieve />
