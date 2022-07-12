@@ -2,16 +2,17 @@ import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Divider from "../components/Divider";
 import Divider2 from "../components/Divider2";
+import frogpay3min from "../assets/img/frogpay3min.png";
 
 
 function KnowUs() {
   return (
-    <section className="white-back" id="knowus">
+    <section className="white-back2" id="knowus">
         <Container>
             <Row className="border-know">
                 <div className="col-md-4">
                     <a className="btn-greenmore font-frak">Know more about PayFrog</a>
-                    <p className="main">Know FrogPay<br></br> in 3 min</p>
+                    <p className="main mt-4">Know FrogPay<br></br> in 3 min</p>
                     <Divider />
                     <Divider />
                     <Divider2 />
@@ -24,7 +25,7 @@ function KnowUs() {
                     </ol>
                 </div>
                 <div className="col-md-8 text-center img-center">
-                    <img src="./img/frogpay3min.png" className="img-fluid "></img>
+                    <img src={frogpay3min} className="img-fluid "></img>
                 </div>
             </Row>
         </Container>

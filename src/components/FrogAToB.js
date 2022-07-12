@@ -1,6 +1,7 @@
 import React from 'react';
 import Divider from "../components/Divider";
 import { Container, Row, Col } from "react-bootstrap";
+import frogatobimg from "../assets/img/payment/frogatob1.png";
 
 
 function frogatob() {
@@ -16,12 +17,12 @@ function frogatob() {
             </Row>
             <Row className="text-center">
                 <div className="col-md-12 marginfrog">
-                    <img className="img-fluid" src=".\img\payment\frogatob1.png"></img>
+                    <img className="img-fluid" src={frogatobimg}></img>
                 </div>
             </Row>
-            <Row className="justify-content-center">
+            <Row className="text-center">
                 <div className="col-md-12">
-                    <button>then <i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="button" className="me-2">then <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </Row>
         </Container>

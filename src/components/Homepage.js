@@ -1,6 +1,7 @@
 import Meta from '../components/Meta';
 import { Container, Row, Col } from "react-bootstrap";
 import Divider from "../components/Divider";
+import FrogHomeImg from "../assets/img/froghome.png";
 
 const Home = () => {
   // page content
@@ -13,7 +14,7 @@ const Home = () => {
         <Row>
           <div className="col-md-7">
             <a className="btn-greenlight font-frak">Thanks to PayFrog</a>
-            <p>World-first decentralized<br></br>charge-back option<br></br>in the blockchain history</p>
+            <p className="mt-4">World-first decentralized<br></br>charge-back option<br></br>in the blockchain history</p>
             <Divider />
             <button type="button" className="me-2 btn-green">
                 Litepaper <i class="fa-solid fa-arrow-right"></i>
@@ -22,7 +23,8 @@ const Home = () => {
               Whitepaper <i class="fa-solid fa-arrow-right"></i>
             </button>
           </div>
-          <div className="col-md-5 img-frog">
+          <div className="col-md-5">
+            <img src={FrogHomeImg} className="img-fluid"></img>
           </div>
         </Row>
       </Container>

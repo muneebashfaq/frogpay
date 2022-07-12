@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import logofooter from "../assets/img/logo-footer.png";
 
 const Footer = () => {
   const year = new Date().getFullYear()
@@ -7,7 +8,7 @@ const Footer = () => {
       <footer className='text-center text-capitalize'>
         <Container>
           <Row className="footer1">
-            <div className="col-md-2 font-cyg"><a className="style3 footcenter"><img class="img-fluid logofoot" src=".\img\logo-footer.png"></img></a></div>
+            <div className="col-md-2 font-cyg"><a className="style3 footcenter"><img class="img-fluid logofoot" src={logofooter}></img></a></div>
             <div className="col-md-1"><a className="style2 footcenter">Litepaper</a></div>
             <div className="col-md-2"><a className="style2 footcenter">Whitepaper</a></div>
             <div className="col-md-1"><a className="style2 footcenter">Pitchdeck</a></div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Nav, Container } from "react-bootstrap";
+import logo from "../assets/img/logo.png";
 
 const Menu = () => {
   return (
@@ -8,7 +9,7 @@ const Menu = () => {
         <Link
           to="/"
           className="font-nav d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
-          <img className="img-fluid" src=".\img\logo.png"></img>
+          <img className="img-fluid" src={logo}></img>
         </Link>
         <Nav>
           <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">

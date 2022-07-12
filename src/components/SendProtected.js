@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from "react-bootstrap";
+import Typewriter from "typewriter-effect";
 import Divider from "../components/Divider";
 
 
@@ -10,8 +11,11 @@ function SendProtected() {
         <section id="SendProtected">
             <Container>
                 <Row>
-                    <div className="text-center font-neue">
-                        <p>Send <span>Protected</span></p>
+                    <div className="typewriter text-center font-neue">
+                        <p>Send
+                            <span> dawad
+                            </span>
+                        </p>
                         <p>crypto payments to strangers</p>
                     </div>
                 </Row>

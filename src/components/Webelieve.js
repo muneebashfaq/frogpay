@@ -1,6 +1,8 @@
 import React from 'react';
 import Divider2 from "../components/Divider2";
 import { Container, Row, Col } from "react-bootstrap";
+import line from "../assets/img/line-dec.png";
+import webelieveimg from "../assets/img/webelieve.png";
 
 
 function webelieve() {
@@ -14,11 +16,11 @@ function webelieve() {
             </Row>
             <Row>
                 <div className="col-md-8"><h1>We believe in building products years ahead, paying attention to the smallest details, making them simple and easy for people</h1></div>
-                <div className="col-md-12 we-img"><img className="img-fluid" src=".\img\webelieve.png"></img></div>
+                <div className="col-md-12 we-img"><img className="img-fluid" src={webelieveimg}></img></div>
             </Row>
             <Row>
               <div className="col-md-12">
-                <img className="img-fluid" src=".\img\line-dec.png"></img>
+                <img className="img-fluid" src={line}></img>
               </div>
               <div className="col-md-5">
                 <p className="font-frak">Manage funds, track your portfolio & disputes <br></br>in a simple, effective and user friendly platform.</p>
