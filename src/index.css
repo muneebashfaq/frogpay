@@ -41,9 +41,8 @@ main {
 }
 
 .boxe{
-  background: #121212;
+  background-color: #e8eded;
   border-radius: 32px;
-  border-color: #4b4b4a;
   border-style: solid;
   border-width: 1px;
   padding: 30px;

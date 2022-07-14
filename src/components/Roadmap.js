@@ -9,31 +9,31 @@ function Roadmap() {
     <section id="roadmap">
       <Container>
           <Row className="text-center">
-              <div className="col-md-12"><h1>Roadmap</h1></div>
-              <div className="col-md-12"><p>Phase 1 - Eggs</p></div>
+              <Col md="12"><h1>Roadmap</h1></Col>
+              <Col md="12"><p>Phase 1 - Eggs</p></Col>
           </Row>
           <Divider />
           <Row className="justify-content-center">
-            <div className="col-md-4 text-center">
+            <Col md="4" className=" text-center">
               <img className="img-fluid" src={eggs1}></img>
-            </div>
-            <div className="col-md-6">
+            </Col>
+            <Col md="6">
             <Divider2 />
               <ul>
                 <li>Core team formation</li>
                 <li>Establishing 3 year plan & vision</li>
                 <li>R&D confirming the feasibility of the project</li>
               </ul>
-            </div>
+            </Col>
           </Row>
           <Row className="justify-content-center">
-            <div className="col-md-1 card-road">Q1 | 2022</div>
-            <div className="col-md-1 card-road">Q2 | 2022</div>
-            <div className="col-md-1 card-road">Q3 | 2022</div>
-            <div className="col-md-1 card-road">Q4 | 2022</div>
-            <div className="col-md-1 card-road">Q1 | 2023</div>
-            <div className="col-md-1 card-road">Q2 | 2023</div>
-            <div className="col-md-1 card-road">Q3 | 2023</div>
+            <Col md="1" className="card-road">Q1 | 2022</Col>
+            <Col md="1" className="card-road">Q2 | 2022</Col>
+            <Col md="1" className="card-road">Q3 | 2022</Col>
+            <Col md="1" className="card-road">Q4 | 2022</Col>
+            <Col md="1" className="card-road">Q1 | 2023</Col>
+            <Col md="1" className="card-road">Q2 | 2023</Col>
+            <Col md="1" className="card-road">Q3 | 2023</Col>
           </Row>
       </Container>
     </section>

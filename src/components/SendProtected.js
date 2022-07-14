@@ -11,12 +11,13 @@ function SendProtected() {
     <>
     <Divider />
         <section id="SendProtected">
-            <Container>
+            <Container >
                 <Row>
+                    <Divider />
                     <Col className="typewriter text-center font-neue">
                     <p>Send 
                         <Typewriter
-                            words={[' Protected', ' Protected', ' Frog', ' Protected']}
+                            words={[' Protected', ' Trustless', ' Decentralized']}
                             loop={5}
                             cursor
                             cursorStyle='|'

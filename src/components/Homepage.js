@@ -8,28 +8,31 @@ const Home = () => {
   const pageTitle = 'FrogPay';
   return (
     <>
-    <section id="home">
+    <section id="home" className='mt-5'>
       <Meta title={pageTitle}/>
       <Container className="white-back">
         <Row>
-          <Col md="7" xs="12">
-            <a className="btn-greenlight font-frak">Thanks to PayFrog</a>
-            <p className="mt-4">World-first decentralized<br></br>charge-back option<br></br>in the blockchain history</p>
-            <Divider />
-          </Col>
-          <Col md="5" xs="12">
+          <Col md="12" xs="12" className="text-center">
             <img src={FrogHomeImg} className="img-fluid froggin2"></img>
+          </Col>
+          <Col md="2" xs="12" className="text-center">
+            <a className="btn-greenlight font-frak">Thanks to PayFrog</a>
+          </Col>
+          <Col md="12" xs="12" className="text-center">
+          <p className="mt-4">World-first decentralized charge-back option <br></br> in the blockchain history</p>
           </Col>
           <div className="col col-lg-5 col-sm-12">
           </div>
         </Row>
-        <Row>
-          <Col  md="12" xs="12" className="mb-5">
+        <Row className="justify-content-center mt-5">
+          <Col  md="2" xs="6" className="text-center">
               <button type="button" className="me-2 btn-green">
-                  Litepaper <i class="fa-solid fa-arrow-right"></i>
+                  LITEPAPER
               </button>
+          </Col>
+          <Col md="2" xs="6" className="text-center">
               <button type="button" className="me-2 btn-green">
-                Whitepaper <i class="fa-solid fa-arrow-right"></i>
+                WHITEPAPER
               </button>
           </Col>
         </Row>

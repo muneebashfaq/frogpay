@@ -9,41 +9,41 @@ function Audited() {
     <section id="audited">
         <Container>
             <Row>
-                <div className="col-md-12">
+                <Col md="12">
                     <h1 className='text-center'>Audited by</h1>
-                </div>
+                </Col>
             </Row>
             <Divider3 />
             <Row className="row-sp">
-                <div className="col-md-3 card-aud-cert">
+                <Col md="3" className="card-aud-cert">
                     <Row>
-                        <div className="col-md-12">
+                        <Col md="12">
                             <img className="img-fluid" src={certik}></img>
-                        </div>
+                        </Col>
                     <Divider3 />
-                        <div className="col-md-12 justify-content-end d-flex"><p>Check on GitHub <i class="fa-solid fa-arrow-right"></i></p></div>
+                        <Col md="12" className="justify-content-end d-flex"><p>Check on GitHub <i class="fa-solid fa-arrow-right"></i></p></Col>
                     </Row>
-                </div>
+                </Col>
 
-                <div className="col-md-3 card-aud-cert-black">
+                <Col md="3" className="card-aud-cert-black">
                     <Row>
-                        <div className="col-md-12">
+                        <Col md="12">
                             <img className="img-fluid" src={auditedfrog}></img>
-                        </div>
+                        </Col>
                     <Divider3 />
-                        <div className="col-md-12 justify-content-end d-flex"><p>Coming soon</p></div>
+                        <Col className="col-md-12 justify-content-end d-flex"><p>Coming soon</p></Col>
                     </Row>
-                </div>
+                </Col>
 
-                <div className="col-md-3 card-aud-cert-black">
+                <Col md="3" className="card-aud-cert-black">
                     <Row>
-                        <div className="col-md-12">
+                        <Col md="12">
                             <img className="img-fluid" src={auditedfrog}></img>
-                        </div>
+                        </Col>
                     <Divider3 />
-                        <div className="col-md-12 justify-content-end d-flex"><p>Coming soon</p></div>
+                        <Col className="col-md-12 justify-content-end d-flex"><p>Coming soon</p></Col>
                     </Row>
-                </div>
+                </Col>
             </Row>
         </Container>
     </section>

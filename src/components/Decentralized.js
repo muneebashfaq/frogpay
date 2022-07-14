@@ -2,25 +2,21 @@ import React from 'react';
 import Divider from "../components/Divider";
 import { Container, Row, Col } from "react-bootstrap";
 import frogsword from "../assets/img/frogsword.png";
-import line from "../assets/img/line-dec.png";
+import line from "../assets/img/line-dec-low-black.png";
 
 
 
 function Decentralized() {
   return (
-    <section className="boxe card-boxe" id="decentralized">
-        <Divider />
-        <Container>
+    <section id="decentralized">
+        <Container className="boxe">
             <Row>
-                <Col md="12"><p className="dec-gray font-frak">Frog's Featerues</p></Col>
+                <Col md="12"><p className="font-frak">Frog's Featerues</p></Col>
             </Row>
             <Row>
                 <Col md="6"><h1>Decentralized and Protected Payments</h1></Col>
                 <Col md="6">
                   <img className="img-fluid dec" src={frogsword}></img>
-                  <Divider />
-                  <Divider />
-                  <Divider />
                 </Col>
             </Row>
             <Row>
@@ -33,11 +29,8 @@ function Decentralized() {
             </Row>
 
             <Row>
-                <Col md="12"><p className="dec-gray font-frak">Frog's Featerues</p></Col>
+                <Col md="12"><p className="font-frak">Frog's Featerues</p></Col>
             </Row>
-
-            
-
         </Container>
     </section>
   )
