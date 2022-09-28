@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/frogpay/static/css/main.8e16a15c.chunk.css",
+    "main.js": "/frogpay/static/js/main.54f891b0.chunk.js",
+    "main.js.map": "/frogpay/static/js/main.54f891b0.chunk.js.map",
+    "runtime-main.js": "/frogpay/static/js/runtime-main.326a6026.js",
+    "runtime-main.js.map": "/frogpay/static/js/runtime-main.326a6026.js.map",
+    "static/css/2.4f5cbc3d.chunk.css": "/frogpay/static/css/2.4f5cbc3d.chunk.css",
+    "static/js/2.02d68ca5.chunk.js": "/frogpay/static/js/2.02d68ca5.chunk.js",
+    "static/js/2.02d68ca5.chunk.js.map": "/frogpay/static/js/2.02d68ca5.chunk.js.map",
+    "static/js/3.ba27c7c2.chunk.js": "/frogpay/static/js/3.ba27c7c2.chunk.js",
+    "static/js/3.ba27c7c2.chunk.js.map": "/frogpay/static/js/3.ba27c7c2.chunk.js.map",
+    "index.html": "/frogpay/index.html",
+    "static/css/2.4f5cbc3d.chunk.css.map": "/frogpay/static/css/2.4f5cbc3d.chunk.css.map",
+    "static/css/main.8e16a15c.chunk.css.map": "/frogpay/static/css/main.8e16a15c.chunk.css.map",
+    "static/js/2.02d68ca5.chunk.js.LICENSE.txt": "/frogpay/static/js/2.02d68ca5.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/frogpay/static/media/jdmxs.954e09cc.png",
+    "static/media/3.5019c1df.png": "/frogpay/static/media/3.5019c1df.png",
+    "static/media/5.546ec49f.png": "/frogpay/static/media/5.546ec49f.png",
+    "static/media/6.1cb21b52.png": "/frogpay/static/media/6.1cb21b52.png",
+    "static/media/7.9991c5b8.png": "/frogpay/static/media/7.9991c5b8.png",
+    "static/media/index.css": "/frogpay/static/media/PPFraktionMono-Regular.2e62bf86.otf",
+    "static/media/certik-logo.33e837dc.png": "/frogpay/static/media/certik-logo.33e837dc.png",
+    "static/media/frogpay.84f29437.gltf": "/frogpay/static/media/frogpay.84f29437.gltf",
+    "static/media/frogsword.af32f493.png": "/frogpay/static/media/frogsword.af32f493.png",
+    "static/media/next-gen-frog.ebe27d08.png": "/frogpay/static/media/next-gen-frog.ebe27d08.png",
+    "static/media/webelieve.8e47105a.png": "/frogpay/static/media/webelieve.8e47105a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.326a6026.js",
+    "static/css/2.4f5cbc3d.chunk.css",
+    "static/js/2.02d68ca5.chunk.js",
+    "static/css/main.8e16a15c.chunk.css",
+    "static/js/main.54f891b0.chunk.js"
+  ]
+}
