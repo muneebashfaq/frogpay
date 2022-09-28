@@ -1,41 +1,108 @@
 import { Link } from "react-router-dom";
 import { Nav, Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/img/logo.png";
+import Navbar from 'react-bootstrap/Navbar';
+import Dropdown from 'react-bootstrap/Dropdown';
+import ToggleButton from 'react-bootstrap/ToggleButton'
+import "../css/style.css";
+import { useContext } from "react";
+import { Theme_Context } from "./context/Theme.Context";
+import { useState,useEffect } from "react";
+
+
 
 const Menu = () => {
+  const {SetchangeTheme,changeTheme} = useContext(Theme_Context)
+  const [color,setcolor] =useState("white")
+  const [bgcolor,setbgcolor] =useState("btn-nav")
+
+ 
+  const ChangeTheme=()=>{
+    SetchangeTheme(!changeTheme)
+   
+  
+  }
+   
+  useEffect(()=>{
+  
+    if(changeTheme == false){
+      setcolor("black")
+      setbgcolor("btn-nav2")
+    
+  }
+  if(changeTheme ==true){
+    setcolor("white")
+    setbgcolor("btn-nav")
+  }},[changeTheme])
   return (
-    <Container className="headblur">
-      <Row>
-        <Col>
-          <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-            <Link
-              to="/"
-              className="font-nav d-flex align-items-center col-md-3 mb-2 mb-md-0 text-white text-decoration-none">
-              <img className="img-fluid" src={logo}></img>
-            </Link>
-            <Nav>
-              <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li>
-                  <Link to="/about">
-                  <button type="button" className="me-2 btn-nav">
-                    DEMO
-                  </button>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about">
-                  <button type="button" className="me-2 btn-nav">
-                  DOCS
-                  </button>
-                  </Link>
-                </li>
-              </ul>
+      <section id="nav"   style={{
+        backgroundColor: changeTheme ? "black" : "white",
+        transition: "all .5s ease",
+        WebkitTransition: "all .5s ease",
+        MozTransition: "all .5s ease"
+      }}>
+      <Container>
+        <Navbar expand="lg">
+          <Navbar.Brand href="#home"><img src={logo}></img></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mx-auto text-center">
+              <Nav.Link className="margin-navbar padding-a-nav" href="#home" style={{color:`${color}`}}>TRAILER</Nav.Link>
+              <Nav.Link className="margin-navbar padding-a-nav" href="#link" style={{color:`${color}`}}>ROADMAP</Nav.Link>
+              <Nav.Link className="margin-navbar padding-a-nav" href="#link" style={{color:`${color}`}}>FEATURE</Nav.Link>
             </Nav>
-          </header>
-        </Col>
-      </Row>
-    </Container>
+            <Nav className="text-center">
+              <Nav.Link href="">
+              <Dropdown >
+                  <Dropdown.Toggle className={bgcolor} variant="normal" id="dropdown-basic">
+                    Demo
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Col>
+                    <Dropdown.Item className="padding-nav text-center" href="#/action-1">DESKTOP</Dropdown.Item>
+                    <Dropdown.Item className="padding-nav text-center" href="#/action-2">MOBILE</Dropdown.Item>
+                    </Col>
+                  </Dropdown.Menu>
+                </Dropdown>  
+              </Nav.Link>
+              <Nav.Link href="#link" style={{
+        backgroundColor: changeTheme ? "black" : "white",
+        transition: "all .5s ease",
+        WebkitTransition: "all .5s ease",
+        MozTransition: "all .5s ease"
+      }}>
+                <Dropdown >
+                  <Dropdown.Toggle className={bgcolor} variant="normal" id="dropdown-basic">
+                    Docs
+                  </Dropdown.Toggle>
+
+                  <Dropdown.Menu>
+                    <Dropdown.Item className="padding-nav text-center" href="#/action-1">LITEPAPER</Dropdown.Item>
+                    <Dropdown.Item className="padding-nav text-center" href="#/action-2">PITCHDECK</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </Nav.Link>
+              <Nav.Link href="#link" style={{
+        backgroundColor: changeTheme ? "black" : "white",
+        transition: "all .5s ease",
+        WebkitTransition: "all .5s ease",
+        MozTransition: "all .5s ease"
+      }}>
+              <label class="switch">
+  <input type="checkbox" onClick={ChangeTheme}/>
+  <span class="slider round"></span>
+</label>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    </section>
+
+
   );
 };
+
 
 export default Menu;

@@ -1,28 +1,45 @@
 import Meta from '../components/Meta';
 import { Container, Row, Col } from "react-bootstrap";
 import Divider from "../components/Divider";
-import FrogHomeImg from "../assets/img/froghome.png";
-
+import FrogPay3D from "../assets/js/frogpay.gltf";
+import { useContext, useEffect, useState } from "react";
+import { Theme_Context } from "./context/Theme.Context";
 const Home = () => {
-  // page content
+  const {changeTheme} = useContext(Theme_Context)
+ const [color,setcolor] =useState("white")
+
+ useEffect(()=>{
+     
+  if(changeTheme == false){
+    setcolor("black")
+}
+if(changeTheme ==true){
+  setcolor("white")
+ } },[changeTheme])
   const pageTitle = 'FrogPay';
   return (
     <>
     <section id="home" className='mt-5'>
-      <Meta title={pageTitle}/>
-      <Container className="white-back">
+      <Meta title={pageTitle} />
+      <Container className="white-back" >
+        <Row className="justify-content-center" >
+          <Col md="3" sm="12" className="">
+            <model-viewer  src={FrogPay3D} alt="Frogpay3D" shadow-intensity="1" camera-controls auto-rotate ar >
+            </model-viewer>
+          </Col>
+        </Row>
         <Row>
-          <Col md="12" xs="12" className="text-center">
-            <img src={FrogHomeImg} className="img-fluid froggin2"></img>
+          <Col md="4" sm="12" className="text-center" >
+            <a className="btn-greenlight font-frak" >Thanks to Frogpay</a>
           </Col>
-          <Col md="2" xs="12" className="text-center">
-            <a className="btn-greenlight font-frak">Thanks to PayFrog</a>
+          <Col md="12" sm="12" className="text-center" >
+          <p className="mt-4"   style={{
+        color: changeTheme ? "white" : "black",
+        transition: "all .5s ease",
+        WebkitTransition: "all .5s ease",
+        MozTransition: "all .5s ease"
+      }}>World-first decentralized charge-back option <br></br> in the blockchain history</p>
           </Col>
-          <Col md="12" xs="12" className="text-center">
-          <p className="mt-4">World-first decentralized charge-back option <br></br> in the blockchain history</p>
-          </Col>
-          <div className="col col-lg-5 col-sm-12">
-          </div>
         </Row>
         <Row className="justify-content-center mt-5">
           <Col  md="2" xs="6" className="text-center">
@@ -32,7 +49,7 @@ const Home = () => {
           </Col>
           <Col md="2" xs="6" className="text-center">
               <button type="button" className="me-2 btn-green">
-                WHITEPAPER
+                PITCHDECK
               </button>
           </Col>
         </Row>

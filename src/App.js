@@ -9,11 +9,29 @@ import Layout from "./layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-
+import { useContext, useEffect, useState } from "react";
+import { Theme_Context } from "./components/context/Theme.Context";
+import {Helmet} from 'react-helmet'
 const App = () => {
+ const {changeTheme} = useContext(Theme_Context)
+ const [color,setcolor] =useState("black")
+
+
   return (
-    <Layout>
-      <Container>
+    <Layout >
+        <Helmet>
+    <style>{`body { background-color: ${changeTheme ? "black" : "white"};transition: all .5s ease;
+        Webkit-transition: all .5s ease;
+        Moz-transition: all .5s ease}`}</style>
+  </Helmet>
+      <Container
+      style={{
+        backgroundColor: changeTheme ? "black" : "white",
+        transition: "all .5s ease",
+        WebkitTransition: "all .5s ease",
+        MozTransition: "all .5s ease"
+      }}
+>
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/about" element={<About />} />
